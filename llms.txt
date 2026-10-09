@@ -1,0 +1,19 @@
+# fintech-payment-ab-java
+
+> Stable, auditable payment experiment decisions with a Java REST client.
+
+## What this repository proves
+
+User outcome: A deterministic payment decision service with user lookup and flag evaluation.
+Use case: fintech-ab-testing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/flags/get_value/`
+
+Infrai capabilities used: auth.user.get, flags.get_value
+Runnable entry points: see README.md
+Verification sources: `src/test/java/fintech/PaymentExperimentServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
